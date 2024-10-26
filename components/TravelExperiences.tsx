@@ -1,4 +1,4 @@
-"use client"; // Add this directive to make the component a client component
+"use client";
 
 import React, { useState } from 'react';
 import { Button } from "../components/ui/button";
@@ -40,14 +40,14 @@ export default function TravelExperiences() {
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">{t.title}</div>
           <Button>{t.search}</Button>
-          <Select>
-            <SelectTrigger className="w-[120px]">
+          <Select onValueChange={setLanguage}>
+            <SelectTrigger style={{ width: '120px' }}>
               <SelectValue placeholder="Language" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem onClick={() => setLanguage("en")}>English</SelectItem>
-              <SelectItem onClick={() => setLanguage("es")}>Español</SelectItem>
-              <SelectItem onClick={() => setLanguage("fr")}>Français</SelectItem>
+              <SelectItem value="en">English</SelectItem>
+              <SelectItem value="es">Español</SelectItem>
+              <SelectItem value="fr">Français</SelectItem>
             </SelectContent>
           </Select>
         </nav>
