@@ -179,3 +179,4 @@ export default function TravelExperiences() {
                   <img src={exp.image} alt={exp.title} className="w-full h-40 object-cover rounded-md mb-4" />
                   <CardDescription>{exp.description}</CardDescription>
                 </CardContent>
+
