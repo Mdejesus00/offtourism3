@@ -1,3 +1,5 @@
+"use client"; // Add this directive to make the component a client component
+
 import React, { useState } from 'react';
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
