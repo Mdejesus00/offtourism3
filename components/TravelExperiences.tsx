@@ -1,8 +1,3 @@
-Certainly! I'll rewrite your entire `TravelExperiences.tsx` file with relative imports and ensure it aligns with the configuration changes. Here’s the updated file content:
-
-### Updated `TravelExperiences.tsx`
-
-```typescript
 "use client";
 import React, { useState } from 'react';
 import { Button } from "../ui/button";
