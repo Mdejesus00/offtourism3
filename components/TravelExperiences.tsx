@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from 'react';
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Button } from "../ui/button";
+import { Input } from "../ui/input";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
 import { ArrowUpIcon, ArrowDownIcon, GlobeIcon, HeartIcon, SearchIcon, UtensilsIcon, PaletteIcon, DumbbellIcon, BriefcaseIcon, GraduationCapIcon } from 'lucide-react';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
 
 export default function TravelExperiences() {
   const [activeTab, setActiveTab] = useState('top');
@@ -35,7 +35,8 @@ export default function TravelExperiences() {
       <header className="bg-white shadow-sm">
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">{t.title}</div>
-          <Button variant="ghost">{t.search}</Button>
+          {/* Removed 'variant' prop from Button for compatibility */}
+          <Button>{t.search}</Button>
           <Select value={language} onValueChange={setLanguage}>
             <SelectTrigger className="w-[120px]">
               <SelectValue placeholder="Language" />
@@ -59,3 +60,4 @@ export default function TravelExperiences() {
     </div>
   );
 }
+
