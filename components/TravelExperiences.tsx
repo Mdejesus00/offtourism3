@@ -8,7 +8,6 @@ import { ArrowUpIcon, ArrowDownIcon, GlobeIcon, HeartIcon, SearchIcon, UtensilsI
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../components/ui/select";
 
 export default function TravelExperiences() {
-  const [activeTab, setActiveTab] = useState('top');
   const [language, setLanguage] = useState('en');
 
   const translations = {
@@ -36,8 +35,7 @@ export default function TravelExperiences() {
         <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">{t.title}</div>
           <Button>{t.search}</Button>
-          {/* Adjust Select component with explicit typing */}
-          <Select value={language} onValueChange={(value: string) => setLanguage(value)}>
+          <Select value={language} onValueChange={(value) => setLanguage(value)}>
             <SelectTrigger className="w-[120px]">
               <SelectValue placeholder="Language" />
             </SelectTrigger>
