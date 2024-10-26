@@ -1,11 +1,8 @@
 "use client";
 import React, { useState } from 'react';
-import { Button } from "../ui/button";
-import { Input } from "../ui/input";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../ui/tabs";
-import { ArrowUpIcon, ArrowDownIcon, GlobeIcon, HeartIcon, SearchIcon, UtensilsIcon, PaletteIcon, DumbbellIcon, BriefcaseIcon, GraduationCapIcon } from 'lucide-react';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "../ui/select";
+import { Button } from "./button";
+import { Input } from "./input";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./select";
 
 export default function TravelExperiences() {
   const [activeTab, setActiveTab] = useState('top');
