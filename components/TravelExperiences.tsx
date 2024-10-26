@@ -1,9 +1,22 @@
 "use client";
-import { Button } from "./components/ui/button.tsx";
-import { Input } from "./components/ui/input.tsx";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./components/ui/card.tsx";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "./components/ui/tabs.tsx";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./components/ui/select.tsx";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
+import { 
+  ArrowUpIcon, 
+  ArrowDownIcon, 
+  GlobeIcon, 
+  HeartIcon, 
+  SearchIcon, 
+  UtensilsIcon, 
+  PaletteIcon, 
+  DumbbellIcon, 
+  BriefcaseIcon, 
+  GraduationCapIcon 
+} from 'lucide-react';
+
 
 
 export default function TravelExperiences() {
